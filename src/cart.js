@@ -16,7 +16,7 @@ function Cart() {
     var s = 0;
     
     lineItems.forEach(function(item) {
-      s += (item.count * item.product.price);
+      s += (item.count * item.product.price());
     });
 
     return s;    
