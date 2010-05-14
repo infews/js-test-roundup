@@ -1,4 +1,4 @@
-xdescribe("Cart", function () {
+describe("Cart", function () {
   var cart, prod1, prod2;
 
   beforeEach(function() {
@@ -14,16 +14,13 @@ xdescribe("Cart", function () {
     });
 
     it("should have the items", function() {
-      expect(cart.itemCount).toEqual(3);
+      expect(cart.itemCount()).toEqual(3);
     });
 
     it("should update the subtotal", function() {
-      expect(cart.subtotal).toEqual(12.93);
-    });
-
-    it("should ", function() {
-      
+      expect(cart.subtotal()).toEqual(12.93);
     });
 
   });
+
 });
